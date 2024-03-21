@@ -1,0 +1,214 @@
+@font-face {
+    font-family: Coashela;
+    src: url('fonts/Coashela Notes.otf');
+}
+
+@font-face {
+    font-family: Dejavu;
+    src: url('fonts/DejaVuSansMono.ttf');
+}
+
+@font-face {
+    font-family: Dense;
+    src: url('fonts/dense_regular.otf');
+}
+
+
+body{
+    background-color: #253239;
+    margin: 0 0 0 0;
+}
+
+.container{
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+}
+
+
+.site-navbar{
+    display: flex;
+    align-items: center; 
+    background-color: aliceblue;
+}
+
+.outerContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #253239;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+}
+
+.innerContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: "Coashela";
+    font-size: 20px;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+}
+
+.navdiv ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navdiv ul li{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navdiv ul li a{
+    text-decoration: none;
+    color: #846c6c;
+}
+
+
+.navdiv ul li .activeanchor{
+    color: #f26311;;
+}
+
+.profile{  
+    display: flex;
+    align-items: center;
+}
+
+.profilediv{
+    padding-top: 4px;
+}
+
+.profile a{
+    display: flex;
+}
+
+.profile svg{
+    display: flex;
+    align-self: center;
+    padding-bottom: 11px;
+    padding-right: 5px;
+}
+
+.profile svg path{
+    fill: #988080;
+}
+
+
+#navrightdiv{
+    margin-left: auto; 
+}
+
+#navleftdiv{
+    width: 45%;
+    padding-left: 10px;
+}
+
+.site-logo{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.site-logo a{
+    color: #f26311; /*rgb(120, 28, 122);*/
+    text-decoration: none;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: "Coashela";
+    justify-self: center;
+}
+
+.site-logo a:hover{
+    color: #f4e91d;
+}
+
+main{
+    height: 800px;
+    margin: 70px;
+    margin-top: 50px;
+    /*background-color: #979595;*/
+}
+
+
+.div1 {
+    position: relative; /* Position relative to create a positioning context */
+    overflow: hidden; /* Hide any overflow from the absolutely positioned image */
+    width: 100%;
+    height: 750px;
+    margin: 0 auto;
+}
+
+.div1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    z-index: 1; /* Position the image behind the text */
+}
+
+.text-container {
+    /*position: relative;*/
+    position: absolute;
+    top: 24%;
+    left: 34%;
+    width: 25%;
+    height: 33%;
+    background-color: #ea5e0db7;
+    border: #ffffff 2px solid;
+    border-radius: 10px;
+    color: white; /* Text color on top of the image */
+    margin: 45px;
+    padding: 20px; /* Padding around the text */
+    z-index: 10;
+}
+
+.text-container h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text-container p {
+    font-size: 20px;
+}
+
+
+
+
+
+.footercenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: #ffffff;
+    font-family: "Coashela";
+    font-size: 20px;
+}
+
+.footer .footercenter p{
+    margin: 0;
+}
+
+
+.et {
+    color: #979595;
+}
